@@ -1,6 +1,6 @@
 {
   "name": "@musicstory/react-bootstrap-table-next",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Next generation of react-bootstrap-table by musicstory",
   "main": "./lib/index.js",
   "repository": {
