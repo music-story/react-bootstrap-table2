@@ -1,7 +1,7 @@
 {
   "name": "@musicstory/react-bootstrap-table2",
-  "version": "1.0.2",
-  "private": false,
+  "version": "1.0.0",
+  "private": true,
   "description": "Rebuilt for react-bootstrap-table by musicstory",
   "main": "index.js",
   "scripts": {
