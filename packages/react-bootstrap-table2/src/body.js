@@ -87,7 +87,7 @@ class Body extends React.Component {
         additionalRowProps.selectRow = selectRow;
       }
 
-      content = data.map((row, index) => {
+      content = data.filter(row => row).map((row, index) => {
         const key = _.get(row, keyField);
         const baseRowProps = {
           key,
