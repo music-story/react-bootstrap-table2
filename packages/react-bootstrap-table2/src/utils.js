@@ -4,7 +4,7 @@
 import _ from 'underscore';
 
 function splitNested(str) {
-  return [str].join('.').replace(/\[/g, '.').replace(/\]/g, '').split('.');
+  return str.replace(']', '').split(/\[\./);
 }
 
 function contains(list, value) {
@@ -55,8 +55,8 @@ function isEmptyObject(obj) {
   const hasOwnProperty = Object.prototype.hasOwnProperty;
   const keys = Object.keys(obj);
 
-  for (let i = 0; i < keys.length; i += 1) {
-    if (hasOwnProperty.call(obj, keys[i])) return false;
+  for (let key of keys) {
+    if (hasOwnProperty.call(obj, key)) return false;
   }
 
   return true;
